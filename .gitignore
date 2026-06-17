@@ -1,0 +1,80 @@
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-lock.yaml
+.yarn/
+
+# ========================
+# Build artifacts
+# ========================
+dist/
+build/
+.next/
+out/
+.nuxt/
+.output/
+.vite/
+
+# ========================
+# Environment files
+# ========================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# IDE / Editor configs
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========================
+# Logs and temporary files
+# ========================
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+.cache/
+tmp/
+temp/
+
+# ========================
+# Test & coverage
+# ========================
+coverage/
+.nyc_output/
+.jest-cache/
+
+# ========================
+# Misc
+# ========================
+*.tgz
+*.zip
+.turbo/

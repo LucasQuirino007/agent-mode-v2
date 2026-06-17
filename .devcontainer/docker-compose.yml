@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm
+    volumes:
+      - ../..:/workspaces:cached
+      - node_modules_backend:/workspaces/${LOCAL_WORKSPACE_FOLDER_BASENAME}/backend/node_modules
+      - node_modules_frontend:/workspaces/${LOCAL_WORKSPACE_FOLDER_BASENAME}/frontend/node_modules
+    command: sleep infinity
+    network_mode: host
+
+volumes:
+  node_modules_backend:
+  node_modules_frontend:
