@@ -22,6 +22,13 @@ router.get('/documentos/:cpf', (req, res) => {
   const cpfNormalizado = normalizarCpf(req.params.cpf);
   const tipo = String(req.query.tipo || '').toUpperCase();
 
+  if (cpfNormalizado.length !== 11) {
+    return res.status(400).json({
+      success: false,
+      message: 'CPF inválido.'
+    });
+  }
+
   if (tipo && !['IR', 'BOLETO'].includes(tipo)) {
     return res.status(400).json({
       success: false,

@@ -1,6 +1,6 @@
 ---
 description: "Use when generating or updating API documentation in Swagger/OpenAPI format with clear language and practical request/response examples for each endpoint."
-tools: [read, search, edit]
+tools: [read, agent, edit, search]
 user-invocable: true
 argument-hint: "Provide route files, endpoint list, or API module to document."
 ---
